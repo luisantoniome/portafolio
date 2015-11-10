@@ -17,6 +17,10 @@ a {
 	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+}
+
 h1 {
 	font-family: 'Satisfy', cursive;
 }
@@ -71,6 +75,16 @@ nav {
 	padding: 1rem 0;
 }
 
+#works {
+	background: #ecf0f1;
+	padding: 1rem 0;
+}
+
+#works h2 {
+	color: gray;
+	margin: 0 0 1rem;
+}
+
 .circle {
 	background: #3498db;
 	border-radius: 50%;
@@ -86,4 +100,16 @@ nav {
 .service a {
 	margin: 0 auto;
 	width: 50%;
+}
+
+.work {
+	margin: 1rem 0;
+}
+
+.work a {
+	color: #34495e;
+}
+
+.work p {
+	padding: 0 1rem;
 }
