@@ -66,6 +66,11 @@ nav {
 	width: 60%;
 }
 
+#services {
+	color: #3498db;
+	padding: 1rem 0;
+}
+
 .btn {
 	background: #e67e22;
 	border-bottom: 4px solid #d35400;
@@ -82,4 +87,21 @@ nav {
 
 .btn:hover {
 	background: #d35400;
+}
+
+.circle {
+	background: #3498db;
+	border-radius: 50%;
+	height: 100px;
+	margin: .5rem auto;
+	width: 100px;
+}
+
+.service {
+	margin: 1rem 0;
+}
+
+.service a {
+	margin: 0 auto;
+	width: 50%;
 }
