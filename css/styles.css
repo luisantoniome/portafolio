@@ -35,6 +35,33 @@ nav {
 	display: none;
 }
 
+#banner {
+	background-image: url('../img/banner.jpg');
+	background-position: center;
+	background-size: cover;
+	display: table;
+	height: 400px;
+	width: 100%;
+}
+
+#banner div {
+	display: table-cell;
+	padding: 0 1rem;
+	vertical-align: middle;
+}
+
+#banner h2 {
+	font-size: 2.4rem;
+	line-height: 3rem;
+	margin: 1rem 0;
+	text-shadow: 2px 2px 3px black;
+}
+
+#banner a {
+	margin: 0 auto;
+	width: 50%;
+}
+
 #logo {
 	width: 60%;
 }
