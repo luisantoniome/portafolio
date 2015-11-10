@@ -17,6 +17,10 @@ a {
 	text-decoration: none;
 }
 
+h1 {
+	font-family: 'Satisfy', cursive;
+}
+
 header {
 	background: #1abc9c;
 	padding: .5rem 0;
