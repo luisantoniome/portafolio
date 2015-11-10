@@ -1,0 +1,31 @@
+.btn {
+	background: rgba(0, 0, 0, 0);
+	border-bottom: 4px solid transparent;
+	border-radius: 10px;
+	display: block;
+	font-size: 18px;
+	padding: 8px;
+	transition: .3s all;
+}
+
+.btn:active {
+	transform: scale(.9);
+}
+
+.btn-primary {
+	background: #e67e22;
+	border-color: #d35400;
+}
+
+.btn-primary:hover {
+	background: #d35400;
+}
+
+.btn-secondary {
+	background: #f1c40f;
+	border-color: #f39c12;
+}
+
+.btn-secondary:hover {
+	background: #f39c12;
+}

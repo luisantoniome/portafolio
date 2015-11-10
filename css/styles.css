@@ -71,24 +71,6 @@ nav {
 	padding: 1rem 0;
 }
 
-.btn {
-	background: #e67e22;
-	border-bottom: 4px solid #d35400;
-	border-radius: 10px;
-	display: block;
-	font-size: 18px;
-	padding: 8px;
-	transition: .3s all;
-}
-
-.btn:active {
-	transform: scale(.9);
-}
-
-.btn:hover {
-	background: #d35400;
-}
-
 .circle {
 	background: #3498db;
 	border-radius: 50%;
