@@ -179,3 +179,42 @@ nav ul li:nth-child(even) {
 .work p {
 	padding: 0 1rem;
 }
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+	.service {
+		display: inline-block;
+		margin: 1rem;
+	}
+
+	.service a {
+		margin: 0 auto;
+		width: 120px;
+	}
+
+	.work {
+		display: inline-block;
+		margin: 10px;
+		width: 30%;
+	}
+
+	blockquote {
+		display: inline-block;
+		vertical-align: middle;
+		width: 30%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.service h3 {
+		font-size: 1.5rem;
+	}
+
+	blockquote {
+		font-size: 1.1rem;
+	}
+
+	#social ul li {
+		font-size: 1.2rem;
+	}
+}
