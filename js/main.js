@@ -1,8 +1,14 @@
-function showHide(id) {
-	var menu = document.getElementById(id);
+window.onload = function() {
+	showHideMenu();
+}
+
+function showHideMenu() {
+	var menu = document.getElementById('menu');
 	menu.style.display = (menu.style.display == 'none') ? 'block' : 'none' ;
 }
 
-window.onload = function() {
-	showHide('menu');
+var hamburger = document.querySelector('#hamburger span');
+
+hamburger.onclick = function() {
+	showHideMenu();
 }

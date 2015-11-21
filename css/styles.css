@@ -42,10 +42,6 @@ img {
 	max-width: 100%;
 }
 
-nav {
-	
-}
-
 nav ul li a {
 	color: white;
 	display: block;
@@ -78,6 +74,10 @@ nav ul li:nth-child(even) {
 	line-height: 3rem;
 	margin: 1rem 0;
 	text-shadow: 2px 2px 3px black;
+	transition: 1s all;
+	-ms-transition: 1s all;
+	-moz-transition: 1s all;
+	-webkit-transition: 1s all;
 }
 
 #banner a {
@@ -93,6 +93,10 @@ nav ul li:nth-child(even) {
 #copyright p {
 	font-size: 14px;
 	letter-spacing: 1px;
+}
+
+#hamburger {
+	cursor: pointer;
 }
 
 #logo {
@@ -112,6 +116,11 @@ nav ul li:nth-child(even) {
 #social ul li {
 	display: inline-block;
 	margin: 0 .4rem;
+}
+
+#social ul li span {
+	font-size: 3rem;
+	margin: 0 5px;
 }
 
 #testimonials {
@@ -151,21 +160,29 @@ nav ul li:nth-child(even) {
 	margin: 0 0 1rem;
 }
 
-.circle {
+/*.circle {
 	background: #3498db;
 	border-radius: 50%;
 	height: 100px;
 	margin: .5rem auto;
 	width: 100px;
-}
+}*/
 
 .service {
 	margin: 1rem 0;
 }
 
 .service a {
-	margin: 0 auto;
+	margin: 10px auto;
 	width: 50%;
+}
+
+.service h3 {
+	margin: 10px 0;
+}
+
+.service span {
+	font-size: 5rem;
 }
 
 .work {
@@ -182,6 +199,28 @@ nav ul li:nth-child(even) {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
+	#banner h2 {
+		font-size: 3rem;
+		line-height: 3.5rem;
+		margin: 1rem 3rem;
+	}
+
+	#hamburger {
+		float: right;
+		margin: 1rem;
+	}
+
+	#login {
+		float: right;
+		margin: 1rem;
+	}
+
+	#logo {
+		float: left;
+		margin: 0 1rem;
+		width: auto;
+	}
+
 	.service {
 		display: inline-block;
 		margin: 1rem;
@@ -206,6 +245,46 @@ nav ul li:nth-child(even) {
 }
 
 @media screen and (min-width: 1024px) {
+	#banner h2 {
+		font-size: 4.2rem;
+		line-height: 5rem;
+		margin: 1rem 5rem;
+	}
+
+	#hamburger {
+		display: none;
+	}
+
+	#logo {
+		margin: 0 2rem;
+	}
+
+	#menu {
+		display: block !important;
+		float: right;
+	}
+	
+	#menu ul {
+		list-style: none;
+		margin: 1rem;
+	}
+
+	#menu ul li {
+		background: transparent;
+		border-top: 4px solid transparent;
+		display: inline-block;
+		margin: 0 1rem;
+		transition: .3s all;
+	}
+
+	#menu ul li:hover {
+		border-color: #e67e22;
+	}
+
+	#menu ul li a {
+		font-weight: lighter;
+	}
+
 	.service h3 {
 		font-size: 1.5rem;
 	}
