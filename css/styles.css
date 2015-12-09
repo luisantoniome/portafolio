@@ -7,7 +7,7 @@
 body {
 	background: white;
 	color: white;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	text-align: center;
 }
@@ -99,6 +99,13 @@ nav ul li:nth-child(even) {
 	cursor: pointer;
 }
 
+#hamburger span {
+	font-size: 2.5rem;
+	position: relative;
+	top: 10px;
+	margin: 10px;
+}
+
 #logo {
 	padding: 1rem 0;
 	width: 60%;
@@ -121,7 +128,32 @@ nav ul li:nth-child(even) {
 #social ul li span {
 	font-size: 3rem;
 	margin: 0 5px;
+	transition: .2s all;
 }
+
+#social ul li span:hover {
+	color: black;
+}
+
+#social ul li span:active {
+	transform: scale(.7);
+}
+
+/*#social ul li span#facebook:hover {
+	color: #3b5998;
+}
+
+#social ul li span#twitter:hover {
+	color: #00aced;
+}
+
+#social ul li span#linkedin:hover {
+	color: #007bb5;
+}
+
+#social ul li span#github:hover {
+	color: black;
+}*/
 
 #testimonials {
 	background: #fde3a7;
@@ -206,18 +238,21 @@ nav ul li:nth-child(even) {
 	}
 
 	#hamburger {
-		float: right;
 		margin: 1rem;
+		position: absolute;
+		right: 0;
+		top: -10px;
 	}
 
 	#login {
-		float: right;
 		margin: 1rem;
+		position: absolute;
+		right: 64px;
 	}
 
 	#logo {
 		float: left;
-		margin: 0 1rem;
+		margin: 0 2rem;
 		width: auto;
 	}
 
@@ -227,7 +262,7 @@ nav ul li:nth-child(even) {
 	}
 
 	.service a {
-		margin: 0 auto;
+		margin: 1rem auto;
 		width: 120px;
 	}
 
@@ -245,6 +280,11 @@ nav ul li:nth-child(even) {
 }
 
 @media screen and (min-width: 1024px) {
+	#banner a {
+		font-size: 2rem;
+		width: 20%;
+	}
+
 	#banner h2 {
 		font-size: 4.2rem;
 		line-height: 5rem;
@@ -253,6 +293,13 @@ nav ul li:nth-child(even) {
 
 	#hamburger {
 		display: none;
+	}
+
+	#login {
+		float: right;
+		position: relative;
+		right: 15px;
+		top: 5px;
 	}
 
 	#logo {
@@ -283,6 +330,11 @@ nav ul li:nth-child(even) {
 
 	#menu ul li a {
 		font-weight: lighter;
+	}
+
+	#works h2,
+	#testimonials h3 {
+		font-size: 2rem;
 	}
 
 	.service h3 {
